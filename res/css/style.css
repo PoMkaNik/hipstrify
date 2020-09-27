@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap');
+/* font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/* frixes some issues with blocks were float is used */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+h2 > span {
+  display: inline-block;
+  background-color: #dc3545;
+  height: 4px;
+  width: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #dc3545;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+p {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+#banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#banner {
+  background: url('img/banner-1.jpg') no-repeat fixed center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+
+#banner-content {
+  min-height: 100vh;
+  padding: 6rem 2rem 2em 2rem;
+  color: #fff;
+}
+
+#banner-content > h1,
+#banner-content > p,
+#sign-up > p,
+#sign-up > h2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  text-align: center;
+}
+
+#testimonials {
+  min-height: 30vh;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote > svg {
+  font-size: 4rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+blockquote > cite {
+  color: #dc3545;
+}
+
+#why-us,
+#some-text {
+  background-color: #efefef;
+}
+
+#sign-up {
+  background: url('img/banner-3.jpg') no-repeat fixed center;
+  background-size: cover;
+  color: #fff;
+  min-height: 60vh;
+}
+
+.w34rem {
+  width: 34.2rem;
+}
+
+.input-height {
+  min-height: 3rem;
+}
+
+#contact {
+  background: url('img/banner-2.jpg') no-repeat fixed top center;
+  background-size: cover;
+  color: #fff;
+  min-height: 60vh;
+  position: relative;
+}
+
+#address {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+  padding: 1rem;
+  width: 30%;
+  top: 30%;
+  left: 65%;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  color: #9a9da0;
+  padding: 2rem 0;
+  background-color: #343a40;
+}
+
+/* Responsive control */
+@media only screen and (max-width: 1366px) {
+  #banner,
+  #contact,
+  #sign-up {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #address {
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    min-height: 10vh;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 16px;
+  }
+  .w34rem {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  html {
+    font-size: 12px;
+  }
+}
